@@ -16,8 +16,8 @@
 * cat docker-compose.yml
 #### step06: start your git project with docker-compose 
 * check network inbound rules on AWS Lightsail 
-* /usr/local/bin/docker-compose up -d
-* /usr/local/bin/docker-compose down
+* sudo /usr/local/bin/docker-compose up -d
+* sudo /usr/local/bin/docker-compose down
 
 
 
