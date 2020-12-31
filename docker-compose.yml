@@ -1,4 +1,4 @@
-version: '3.3'
+version: '3.7'
 
 services:
    db:
@@ -6,6 +6,12 @@ services:
      volumes:
        - db_data:/var/lib/mysql
      restart: always
+     deploy:
+       resources:
+         limits:  
+           memory: 150M
+         reservations:
+           memory: 140M
      environment:
        MYSQL_ROOT_PASSWORD: wordpress
        MYSQL_DATABASE: wordpress
@@ -19,6 +25,12 @@ services:
      ports:
        - "80:80"
      restart: always
+     deploy:
+       resources:
+         limits:  
+           memory: 100M
+         reservations:
+           memory: 50M
      environment:
        WORDPRESS_DB_HOST: db:3306
        WORDPRESS_DB_USER: wordpress
