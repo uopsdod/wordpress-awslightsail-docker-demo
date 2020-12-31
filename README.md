@@ -18,7 +18,7 @@
 * check network inbound rules on AWS Lightsail 
 * cd ./wordpress-awslightsail-docker-demo/
 * cat docker-compose.yml
-* sudo /usr/local/bin/docker-compose up -d
+* sudo /usr/local/bin/docker-compose --compatibility up -d
 * sudo docker container ls
 
 #### step07: close it
