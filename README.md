@@ -16,11 +16,11 @@
 * cat docker-compose.yml
 #### step06: start your git project with docker-compose 
 * check network inbound rules on AWS Lightsail 
+* cd ./wordpress-awslightsail-docker-demo/
 * sudo /usr/local/bin/docker-compose up -d
+
+#### step07: close it
 * sudo /usr/local/bin/docker-compose down
-
-
-
 
 #### other: 
 * allocate static ip
