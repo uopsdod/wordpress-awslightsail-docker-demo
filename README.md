@@ -13,10 +13,11 @@
 * sudo yum install git -y
 #### step05: download git project
 * sudo git clone https://github.com/uopsdod/wordpress-awslightsail-docker-demo.git
-* cat docker-compose.yml
+
 #### step06: start your git project with docker-compose 
 * check network inbound rules on AWS Lightsail 
 * cd ./wordpress-awslightsail-docker-demo/
+* cat docker-compose.yml
 * sudo /usr/local/bin/docker-compose up -d
 * sudo docker container ls
 
