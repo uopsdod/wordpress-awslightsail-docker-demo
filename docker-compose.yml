@@ -5,6 +5,8 @@ services:
      image: mysql:5.7
      volumes:
        - db_data:/var/lib/mysql
+     ports:
+       - "3306:3306"
      restart: always
      deploy:
        resources:
@@ -22,6 +24,8 @@ services:
      depends_on:
        - db
      image: wordpress:latest
+     volumes:
+       - app_data:/var/www/html
      ports:
        - "80:80"
      restart: always
@@ -37,3 +41,4 @@ services:
        WORDPRESS_DB_PASSWORD: wordpress
 volumes:
     db_data:
+    app_data:
