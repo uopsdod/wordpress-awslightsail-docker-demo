@@ -21,10 +21,12 @@
 * sudo /usr/local/bin/docker-compose --compatibility up -d
 * sudo docker container ls
 
+#### step06-01: use it
+* wordpress admin page: x.x.x.x/wp-admin
+
 #### step07: close it
 * sudo /usr/local/bin/docker-compose down
 
 #### other: 
-* allocate static ip
 * create DNS zone 
 
